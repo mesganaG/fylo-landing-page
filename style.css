@@ -10,6 +10,7 @@ body {
     height: 100vh;
     background-repeat: no-repeat;
     background-color: hsl(217, 28%, 15%);
+    z-index: 1;
 }
 
 
@@ -97,6 +98,8 @@ main {
     flex-direction: column;
     align-items: center;
     gap:4rem;
+    padding-bottom: 20rem;
+    z-index: 1;
     
 }
 
@@ -335,30 +338,118 @@ main {
     padding-top: 1rem;
 }
 
+/* Footer section starts here */
+
+.footer-section {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr 1fr;
+    background-color:hsl(216, 53%, 9%);
+    padding: 20rem 5rem 5rem 5rem;
+    gap: 2rem;
+    z-index: 1;
+}
+
+.logo-location-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: white;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+}
+.location-container{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
 
 
 
+.location-container span::before{
+    content: url(images/icon-location.svg);
+}
 
 
+.phone-email-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 4rem 0;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.phone::before {
+    content: url(images/icon-phone.svg);
+    padding-right: 1.2rem;
+}
+
+.email::before {
+    content: url(images/icon-email.svg);
+    padding-right: 1rem;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: row;
+    padding: 4rem 0rem;
+    gap: 2rem;
+    color:white;
+}
+
+.footer-menu a{
+    color: white;
+    text-decoration: none;
+
+}
 
 
+.footer-menu a:hover {
+    font-weight: 700;
+}
+.ul-first {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    color: white;
+    list-style: none; 
+    font-family: 'Raleway', sans-serif;
+}
+.ul-second {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    color: white;
+    list-style: none;  
+    font-family: 'Raleway', sans-serif;
+}
 
 
+.social-media-icons {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    padding: 4rem 0;
+ 
 
+}
 
+.social-media-icons a:hover {
+    opacity: .7;
+}
 
+.facebook-icon {
+    width: 10%;
+    color: white;
+}
 
+.twitter-icon {
+    width: 10%;
+}
 
-
-
-
-
-
-
-
-
-
-
+.instagram-icon {
+    width: 10%;
+}
 
 
 @media  (max-width:700px) and (min-width:300px) {
@@ -386,6 +477,17 @@ main {
     .customers-review-display {
         display: flex;
         flex-direction: column;
+    }
+
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 15rem 1rem 1rem 1rem;
+    }
+
+    .phone-email-container {
+        
     }
 
 }
