@@ -9,6 +9,11 @@
 body {
     height: 100vh;
     background-repeat: no-repeat;
+    background-image: url(images/bg-curvy-desktop.svg);
+    background-position: relative;
+    background-position: center bottom;
+    background-position-y:150rem;
+    background-size: 200%;
     background-color: hsl(217, 28%, 15%);
     z-index: 1;
 }
@@ -104,13 +109,14 @@ main {
 }
 
 .illustration-intro-container{
-    max-width: 70%;
+    width: 70%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     align-items: center;
     padding: 3rem;
+   
 
 }
 .illustration-intro-container img {
@@ -129,7 +135,7 @@ main {
 }
 
 .text-content-intro-paragraph {
-    max-width: 80%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -451,6 +457,69 @@ main {
     width: 10%;
 }
 
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: hsl(217, 28%, 15%);
+    width: 60%;
+    top: 187rem;
+    left: 25%;
+    align-items: center;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    gap: 2rem;
+}
+
+.signup-description {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.signup-input-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    width: 100%;
+}
+
+#start-free-btn {
+    width: 15rem;
+    border-radius: 2rem;
+    padding: 1rem;
+    border: none;
+    background-color: hsl(198, 60%, 50%);
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+#start-free-btn:hover {
+    background-color: hsl(176, 68%, 64%);
+}
+
+
+#email-input{
+    width: 50rem;
+    padding: 1rem;
+    padding-left: 2rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    font-family: 'Raleway', sans-serif;
+    border: none;
+}
+
+#email-input:focus {
+    outline: none;
+}
+
+
 
 @media  (max-width:700px) and (min-width:300px) {
     main{
@@ -486,8 +555,66 @@ main {
         padding: 15rem 1rem 1rem 1rem;
     }
 
-    .phone-email-container {
-        
+    .signup-input-container {
+        flex-direction: column;
+    }
+
+    .signup-container {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 90%;
+        top: 255rem;
+        left: 5%;
+        padding: 1rem;
+        gap: 2rem;
+    }
+
+    .illustration-intro-container {
+        width: 90%;
+        padding: 0rem;
+    }
+
+    .text-content-intro-heading h1 {
+        font-size: 1.8rem;
+    }
+
+    .text-content-intro-paragraph {
+        width: 100%;
+        padding: 0;
+    }
+
+    
+    .text-content-intro-paragraph p {
+        font-size: 1rem;
+    }
+    #start-free-btn {
+        width: 100%;
+    }
+
+    #email-input{
+        width: 100%;
+
+    }
+
+    .signup-description {
+        width: 100%;
+        padding: 0;
+
+    }
+    .signup-description h1 {
+        font-size: 1.7rem;
+    }
+
+    body{
+        background-position-y:260rem;
+    }
+}
+
+@media  (max-width:1202px) and (min-width:701px) {
+    .signup-container {
+        width: 70%;
+        left: 15%;
     }
 
 }
